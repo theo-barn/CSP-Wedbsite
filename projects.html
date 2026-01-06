@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted Barn - Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="projects.html">Projects</a>
-    </nav>
 
+<nav>
+    <div class="logo"><a href="index.html">Ted Barn</a></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+    </div>
+</nav>
+
+<header>
     <h1>My Projects</h1>
-    <ul>
-        <li>Project 1 – A cool thing I built</li>
-        <li>Project 2 – Another cool thing</li>
-        <li>Project 3 – Something I'm working on</li>
-    </ul>
+    <p>Games and coding projects I've created</p>
+</header>
+
+<div class="container">
+
+    <div class="project-card">
+        <video controls>
+            <source src="space_invaders.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="description">
+            <h2>Space Invaders Game</h2>
+            <p>This is a Python-based Space Invaders game I developed using Pygame. It features player-controlled shooting, multiple enemy types, and increasing difficulty levels as you progress. I focused on clean game mechanics and smooth animations.</p>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <video controls>
+            <source src="snake_game.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="description">
+            <h2>Snake Game</h2>
+            <p>A classic Snake game built with Python and Pygame. The game tracks the score, increases snake speed as you grow, and includes sound effects. This project helped me practice handling game loops and collision detection.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Ted Barn
+</footer>
+
 </body>
 </html>
