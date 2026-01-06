@@ -125,7 +125,7 @@ footer {
     margin-top: 4rem;
 }
 
-/* Responsive layout */
+/* Responsive layout */ 
 @media (min-width: 768px) {
     .about-me {
         flex-direction: row;
