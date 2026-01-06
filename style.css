@@ -32,7 +32,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #A0D8B0; /* lighter green on hover */
+    color: #A0D8B0; /* lighter green hover */
 }
 
 /* Header section */
@@ -59,14 +59,19 @@ header p {
     padding: 0 2rem;
 }
 
+/* Section cards */
+section {
+    background-color: #E6F2E9; /* very light green */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}
+
 /* About Me Section */
 .about-me {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #E6F2E9; /* very light green */
-    padding: 2rem;
-    border-radius: 12px;
 }
 
 .about-me-text {
@@ -88,6 +93,11 @@ header p {
     border: 2px solid #0B3D2E;
 }
 
+/* Lists */
+ul {
+    padding-left: 1.5rem; /* aligns bullets with headers */
+}
+
 /* Buttons */
 .button {
     display: inline-block;
@@ -105,11 +115,6 @@ header p {
     background-color: #145D42;
 }
 
-/* Sections */
-section {
-    margin-bottom: 3rem;
-}
-
 /* Headings */
 h2 {
     margin-bottom: 1rem;
@@ -125,6 +130,25 @@ footer {
     margin-top: 4rem;
 }
 
+/* Project Cards */
+.project-card {
+    background-color: #E6F2E9;
+    border: 2px solid #0B3D2E;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-card video {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px; /* smaller video size */
+    height: auto;
+}
+
 /* Responsive layout */
 @media (min-width: 768px) {
     .about-me {
@@ -137,5 +161,16 @@ footer {
     }
     .about-me-images {
         flex: 1;
+    }
+
+    .project-card {
+        flex-direction: row;
+        align-items: center;
+    }
+    .project-card .description {
+        padding-left: 2rem;
+    }
+    .project-card video {
+        width: 50%;
     }
 }
